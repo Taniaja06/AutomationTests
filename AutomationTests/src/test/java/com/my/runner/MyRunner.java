@@ -1,10 +1,10 @@
 package com.my.runner;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		//plugin = "", // generate reports
+		plugin = {"pretty","json:target/cucumber.json"},
 		features = ".//Features/", //feature folder location
 		glue = "login.stepDefs", // stepdef location 
 		tags = "@Smoke") // specify the test case to execute

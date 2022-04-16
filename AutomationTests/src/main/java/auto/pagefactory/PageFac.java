@@ -10,18 +10,40 @@ import auto.baseclass.BaseClass;
 public class PageFac extends BaseClass{
 	
 	public PageFac() {
+		
 		PageFactory.initElements(driver, this);
-}
-
+	}
 	
-	@FindBy(xpath ="//input[@name='txtUsername']")
+	@FindBy(xpath = "//input[@name='txtUsername']")
 	@CacheLookup
 	
 	private WebElement enterUserName;
-	public WebElement getenterUserName() {
+
+	public WebElement getEnterUserName() {
 		return enterUserName;
 	}
-		
+	
+	@FindBy(xpath ="//input[@name='txtPassword']")
+	@CacheLookup
+	
+	private WebElement enterPassW;
+
+	public WebElement getEnterPassW() {
+		return enterPassW;
 	}
+	
+	@FindBy(xpath ="//input[@type='submit']")
+	@CacheLookup
+	
+	private WebElement ClickOnLoginBTN;
+
+	public WebElement getClickOnLoginBTN() {
+		return ClickOnLoginBTN;
+	}
+}
+	
+	
+
+	
 	
 

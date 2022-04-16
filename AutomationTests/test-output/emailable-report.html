@@ -9,64 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Test</th></tr>
-<tr><td><a href="#t0">Tutorialspoint</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">23,144</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Tutorialspoint</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,022</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Tutorialspoint &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.my.runner.MyRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1650081198388</td><td rowspan="1">21520</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Tutorialspoint &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.my.runner.MyRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1650087682866</td><td rowspan="1">11145</td></tr></tbody>
 </table>
-<h2>Tutorialspoint</h2><h3 id="m0">com.my.runner.MyRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User able to login to the orangeHRM application</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;tokys-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1ca9:ecfc:c3ec:7ad4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: driver.version: ChromeDriver
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;tokys-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1ca9:ecfc:c3ec:7ad4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at auto.baseclass.BaseClass.setUp(BaseClass.java:12)
-	at login.stepDefs.StepDefs.user_able_to_open_the_browser(StepDefs.java:14)
-	at ✽.Given user able to open the browser(OrangeLogin.feature:7)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:32616/status] to be available after 20009 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at auto.baseclass.BaseClass.setUp(BaseClass.java:12)
-	at login.stepDefs.StepDefs.user_able_to_open_the_browser(StepDefs.java:14)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 55 more
-... Removed 58 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Tutorialspoint</h2><h3 id="m0">com.my.runner.MyRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;user able to sign in and verify the user information&quot;</td><td>&quot;Optional[User able to login to the orangeHRM application]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

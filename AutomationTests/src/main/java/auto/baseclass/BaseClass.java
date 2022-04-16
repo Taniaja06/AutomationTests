@@ -8,7 +8,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	
 	public static void setUp() {
-		System.setProperty("webdriver.chrome.driver", "/Applications/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
